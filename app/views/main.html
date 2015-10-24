@@ -1,0 +1,15 @@
+<div class="jumbotron">
+  <h1>Cade Meu Onibus</h1>
+  <p class="lead">Selecione a linha que deseja rastrear</p>
+  <input type="text" ng-model="linha">
+  <table>
+  		<tr>
+  			
+  		<th>Linhas Disponiveis</th>
+  		</tr>
+  		<tr ng-repeat="bus in onibus | filter:linha">
+  			<td>{{bus.linha}} - <a href="/#/mapa/{{bus.linha}}">Onde está</a></td>
+  		</tr>
+
+  </table>
+</div>

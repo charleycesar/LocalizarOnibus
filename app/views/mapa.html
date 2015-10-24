@@ -1,0 +1,12 @@
+<h1>Localizamos {{qtd_onibus}} ônibus nesta linha - {{linha}}</h1>
+<hr>
+<div id="map_canvas" >
+    <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" options="options" bounds="map.bounds">
+        <ui-gmap-markers models="randomMarkers" coords="'self'" icon="'icon'">
+        </ui-gmap-markers>
+    </ui-gmap-google-map>
+</div>
+<style>
+	.angular-google-map-container { height: 400px; }
+
+</style>
